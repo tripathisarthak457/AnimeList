@@ -20,7 +20,9 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            multiDexEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -61,12 +63,17 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.lottie.compose)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.ktor.client.android)
-    implementation(libs.ktor.client.core)
-    implementation(libs.ktor.client.serialization.jvm)
-    implementation(libs.ktor.client.logging)
-    implementation(libs.kotlinx.serialization.json)
+
     implementation(libs.androidx.ui.text.google.fonts)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation(libs.adapter.rxjava2)
 
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.coil.compose)
 }

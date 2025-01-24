@@ -36,17 +36,17 @@ val Typography = Typography(
     ),
     headlineLarge = TextStyle(
         fontFamily = poppinsFamily,
-        fontWeight = FontWeight.Bold, // Large headline
-        fontSize = 24.sp // Display large size
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp
     ),
     headlineMedium = TextStyle(
         fontFamily = poppinsFamily,
-        fontWeight = FontWeight.Normal, // Regular weight
-        fontSize = 20.sp // Display medium size
+        fontWeight = FontWeight.Normal,
+        fontSize = 20.sp
     ),
     labelSmall = TextStyle(
         fontFamily = poppinsFamily,
-        fontWeight = FontWeight.Normal, // Regular weight
+        fontWeight = FontWeight.Normal,
         fontSize = 12.sp
     )
 )
